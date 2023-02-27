@@ -59,7 +59,7 @@ if __name__ == "__main__":
     if not os.path.exists(config.report_path):
         os.makedirs(config.report_path)
     files = [
-        '7.4.2'
+        'emotion_flow'
     ]
 
     with open(config.report_path + "/Report_Greedy1.csv", "w", newline='') as reportFile:
@@ -71,7 +71,6 @@ if __name__ == "__main__":
             refs, cands, p, a = read_file(f, dec_type="Greedy")
 
             dist_1, dist_2 = calc_distinct(cands)
-            r_dist_1, r_idst_2 = calc_distinct(refs)
 
             bleu = BLEU().corpus_score(cands, [refs])
             print(f"***** BLEU: {bleu.score} *****")
