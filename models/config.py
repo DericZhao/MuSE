@@ -77,8 +77,8 @@ parser.add_argument("--act_loss_weight", type=float, default=0.001)
 parser.add_argument("--emb_file", type=str)
 
 ## transformer
-parser.add_argument("--hop", type=int, default=1)
-parser.add_argument("--heads", type=int, default=2)
+parser.add_argument("--hop", type=int, default=6)
+parser.add_argument("--heads", type=int, default=8)
 parser.add_argument("--depth", type=int, default=40)
 parser.add_argument("--filter", type=int, default=50)
 # parser.add_argument("--max_turns", type=int, default=7)
