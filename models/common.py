@@ -911,7 +911,7 @@ def evaluate(model, data, ty="valid", max_dec_step=30):
     comet_res = []
     pbar = tqdm(enumerate(data), total=len(data))
 
-    t = Translator(model, model.vocab)
+    # t = Translator(model, model.vocab)
     for j, batch in pbar:
         loss, ppl, bce_prog, acc_prog = model.train_one_batch(batch, train=False)
         l.append(loss)
