@@ -60,7 +60,7 @@ if __name__ == "__main__":
         os.makedirs(config.report_path)
     files = [
         'emotion_flow',
-        'more_emotion'
+        'more_emotion',
     ]
 
     with open(config.report_path + "/Report_Greedy1.csv", "w", newline='') as reportFile:
