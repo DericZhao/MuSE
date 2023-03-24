@@ -5,3 +5,6 @@ This repository is the public code for the paper's emotional flow dialogue.
 ![img_1.png](img_1.png) 
 ![img_2.png](img_2.png)
 ![img.png](img.png)
+
+## 
+You can run easily with main2.py
