@@ -109,7 +109,7 @@ def evaluate(model, data, epoch, ty="valid", max_dec_step=30):
                 ref.append(rf)
                 temp = print_custum(
                     emotion=batch["key_emotion_text"][i],
-                    dial=' '.join([word for sentence in batch["input_txt"][i] for word in sentence]),
+                    dial=' '.join([word for utterance in batch["input_txt"] for sentence in utterance for word in sentence]),
                     ref=rf,
                     hyp_g=greedy_sent,
                     pred_emotions=top_preds,
