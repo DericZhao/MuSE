@@ -1,4 +1,4 @@
-# MEFG: Multi-scale Emotional Flow Graph Dialogue Generation Model for Empathetic Dialogue
+# MuSE: A Multi-scale Emotional Flow Graph Model for Empathetic Dialogue Generation
 
 ## 
 This repository is the public code for the paper's emotional flow dialogue.
